@@ -6,6 +6,9 @@
 </div>
 <div class="postAuthor">
 </div>
+<div class="postManage">
+  <%= link_to "編集", edit_post_path(@post.id), class: "postManage__edit" %>
+</div>
 <div class="postText">
   <%= simple_format @post.content %>
 </div>
